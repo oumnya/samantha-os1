@@ -31,5 +31,5 @@ ENTRYPOINT []
 # Set the working directory to the app directory
 WORKDIR /app/app
 
-# Run the Chainlit application
-CMD ["chainlit", "run", "samantha.py", "-h"]
+# Run the Chainlit application and listen on all network interfaces
+CMD ["chainlit", "run", "samantha.py", "--host", "0.0.0.0"]
